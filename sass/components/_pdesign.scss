@@ -1,0 +1,48 @@
+.design{
+    // height: 95vh;
+    width: 100%;
+    padding: $services-vertical-pad $services-hori-pad;
+    background-color: $col-primary-1;
+    display: flex;
+    align-items: center;
+    .design-container{
+        height: 100%;
+        margin: auto;
+        &:focus-visible{
+            animation: moveToBottom 1s;
+        }
+        animation: moveToBottom 1s;
+
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // margin-right: 5rem;
+        &__heading{
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+        &__description{
+            // font-family: 'Crimson Text', serif;
+            font-size: 2.2rem;
+            // color: #000000;
+            font-weight: 600;
+            line-height: 1.23;
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        &__img{
+            width: 100%;
+        }
+        &__caption{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+        }
+    }
+}

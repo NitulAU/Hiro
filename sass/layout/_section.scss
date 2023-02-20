@@ -1,0 +1,9 @@
+.sec{
+    padding: $services-hori-pad $services-vertical-pad;
+    @include respond(tab-port){       
+        padding: $md-hori-pad $md-vertical-pad;
+    }
+}
+div .sec[data-scroll="in"]{
+    background-color: orangered;
+}

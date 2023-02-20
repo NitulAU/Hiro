@@ -1,0 +1,51 @@
+.contact{
+    padding: $services-vertical-pad $services-hori-pad;
+    animation: moveToBottom 1s;
+    &__sub{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    &__main{
+        font-size: 4.8em;
+        font-weight: 800;
+    }
+    &__address{
+        font-size: 1.6rem;
+        font-weight: 500;
+
+    }
+    .contact--links{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        // justify-content: space-between;
+        li{
+            display: inline-block;
+            margin: 1rem 1rem 0;
+        }
+    }
+    .goto-top{
+        background-color: $col-primary-1;
+        color: $col-black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        height: 6rem;
+        // text-align: center;
+        // height: 50%;
+        // font-size: 2.4rem;
+        // display: inline-block;
+        // padding: 2.5rem;// 2rem;
+        #top{
+            height: 3rem ;
+            width: 3rem ;
+        }
+        &:hover{
+            background-color: transparent;
+            outline: 1px solid $col-primary-1;
+
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "base/base";
+@import "base/utilities";
+@import "base/animations";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "components/container1";
+@import "components/pdesign";
+@import "components/services";
+@import "components/team";
+@import "components/career";
+@import "components/project";
+@import "components/contact";
+@import "components/buttons";
+
+
+@import "layout/footer";
+@import "layout/carousel";
+@import "layout/car";
+@import "layout/navigation";
+@import "layout/section";
+
+
+
+html{
+    margin: 0;
+}

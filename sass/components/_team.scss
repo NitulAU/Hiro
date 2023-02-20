@@ -1,0 +1,77 @@
+.team{
+    background-color: $col-black;
+    color: $col-white;
+    padding: $services-vertical-pad $services-hori-pad;
+    &__left{
+        &__heading{
+            margin-top: 3rem;
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+        &__para{
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+        animation: moveToBottom 1s;
+    }
+    .team__pic{
+        display:flex;
+        // flex-direction: column;
+        justify-content: space-evenly;
+        animation: moveToRight 1s;
+        .member{
+            position: relative;
+            // width: 100%;
+            perspective: 150px;
+            padding:5rem 1rem 2rem;
+            animation: shake 1s ease-in-out;
+            &::before{
+                content: "";
+                display: block;
+                height: 1rem;
+                width: 40%;
+                background-image: url("../img/Team_line.png");
+                background-size: auto 10px;
+                // background-size: cover;
+                position: absolute;
+                left: 0;
+                top: 0;
+                animation: shake 1s ease-in-out;
+                // z-index: 4;
+            }
+            &__img{
+                width: 100%;
+                animation: shake 1s ease-in-out;
+            }
+            &__details{
+                position: absolute;
+                // width: 50%;
+                bottom: calc( #{$member-height} / -4 );
+                right: 0;
+                height: $member-height;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                animation: shake 1s ease-in-out;
+
+                &--1{
+                    background-color: $col-black;
+                    color: $col-white;
+                }
+                &--2{
+                    background-color: $col-primary-1;
+                }
+
+                &__name{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                &__role{
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

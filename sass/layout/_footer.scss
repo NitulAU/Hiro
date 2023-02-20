@@ -1,0 +1,31 @@
+.footer{
+    padding: 2rem $services-hori-pad;
+    border-top: 1px solid rgba($col-black,0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation: moveToBottom 1s;
+    p{
+        a{
+            // color: $col-black;
+            // text-decoration: none;
+            &:hover{
+                color: $col-black;
+                text-decoration: overline;
+            }
+        }
+    }
+    &__links{
+        color: $col-black;
+        text-decoration: none;
+        margin-right: 2rem;
+        &:hover{
+            color: $col-black;
+            opacity: 0.8;
+        }
+    }
+    @include respond(tab-port){       
+        padding: $md-hori-pad $md-vertical-pad;
+    }
+
+}

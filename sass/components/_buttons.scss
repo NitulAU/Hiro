@@ -1,0 +1,31 @@
+.view-more-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $col-black;
+    border: 1px solid rgba($col-black,0.2);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    padding: 1rem 3rem;
+    border-radius: 2px;
+    &:hover{
+        color: $col-black;
+    }
+    &:focus,
+    &:focus-visible{
+        outline: 0;
+        box-shadow: 0 0 0 10px rgba($col-primary-1,0.5);
+    }
+}
+
+.view-btn{
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    &:hover{
+        opacity: 0.5;
+    }
+}

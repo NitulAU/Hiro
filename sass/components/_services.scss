@@ -1,0 +1,89 @@
+.services{
+    position: relative;
+    // height: 80vh;
+    padding: $services-vertical-pad $services-hori-pad;
+    &__header{
+        font-size: 4.5rem;
+        font-weight: 700;
+        padding-bottom: 5rem;
+    }
+    &__container{
+        width: 80%;
+        // animation: moveToBottom 1s;
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+    &__box{
+        &__header{
+            position: relative;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            &::After{
+                position: absolute;
+                content: "";
+                // display: block;
+                height: 1rem;
+                width: 40%;
+                background-image: url("../img/Team_line.png");
+                background-size: auto 10px;
+                // background-size: cover;
+                left: 0;
+                bottom: -1.5rem;
+
+            }
+        }
+    }
+    &__list{
+        padding: 0.5rem 1rem 0.5rem 0;
+        border-bottom: 1px solid $col-primary-1;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 10rem;//$services-vertical-pad;
+        right: 8rem;//$services-hori-pad;
+        width: 7rem;
+        height: 25%;
+        // padding: 10% 5%;
+        // background-color: gold;
+        background-image: url("../img/img_2@2x.png");
+        // background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include respond(tab-port){
+            width: 4rem;
+        }
+        @include respond(phone){
+            display: none;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        bottom: $services-vertical-pad;
+        right: 8rem;//$services-hori-pad;
+        width: 7rem;
+        height: 25%;
+        // background-color: rgb(10, 8, 0);
+        background-image: url("../img/img_1@2x.png");
+        // background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include respond(tab-port){
+            width: 4rem;
+        }
+        @include respond(phone){
+            display: none;
+        }
+    }
+}
+
+.service-reveal{
+    animation: moveToBottom 1s ease-in;
+    animation-fill-mode: backwards;
+   
+}

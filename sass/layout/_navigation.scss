@@ -1,0 +1,193 @@
+.navigation{
+    position: relative;
+    // height: 100vh;
+    color: $col-white;
+    transition: all 0.5s;  
+    .top{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 2rem auto;
+        // margin: 3rem 0 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // animation: fadeIn 1s;
+        z-index: 10000000;
+        .logo-box{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__check{
+        display: none;
+    }
+    &__button{
+        display: flex;
+        height: 5rem;
+        width: 5rem;
+        z-index: 90000;
+    }
+    &__bar{
+        width: 80%;
+        height: 0.5rem;
+        margin: auto;
+        position: relative;
+        background-color: $col-white;
+        &::after,
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: -1rem;
+            background-color: $col-white;
+        }
+        &::before{
+            top: 1rem;
+        }
+    }
+    &__check:checked ~ &__bar{
+        opacity: 0;
+        // display: none;
+        // background-color: red;
+        // position: fixed;
+        // &::after{
+        //     transform: rotateX(45deg);
+        // }
+        // &::before{
+        //     transform: rotateX(-45deg);
+        // }
+    }
+    // &__check:checked ~ &__bar::after{
+    //     transform: rotateX(45deg);
+    // }
+    // &__check:checked ~ &__bar::before{
+    //     transform: rotateX(-45deg);
+    // }
+    &__bg{
+        // position: fixed;
+        background-color: $col-black;
+        height: 0;
+    }
+    &__check:checked ~ &__bg{
+        // animation: moveNavigation 1s ease;
+        height:100vh;
+        transition: height 0.5s ease;
+    }
+    &__check:checked ~ &__container{
+        opacity: 1;
+        display: flex;
+    }
+    &__container{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1000;
+        opacity: 0;
+        transition: all 1s ease;
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+        &__side{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 5rem;
+            box-sizing: border-box;
+        }
+        &--left{
+            border-right: 1px solid rgba($col-white,0.5);
+            @include respond(tab-port){
+                border: none;
+                border-bottom: 1px solid rgba($col-white,0.5);
+            }
+        }
+    }
+    &__links{
+        margin: 0 3rem 2rem;
+        padding-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 1;
+        position: relative;
+        width: fit-content;
+        box-sizing: border-box;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            opacity: 0;
+            border-bottom:4px solid rgb(19, 142, 111);
+            transition: all 0.5s;
+        }
+        &:hover::after{
+            opacity: 1;
+            width: 100%;
+        }
+        @include respond(tab-port){
+            margin-bottom: 2rem;
+        }
+    }
+    &__blog-header{
+        // font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    &__blogs{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+        &__pic{
+            width: 8rem;
+            margin-right: 2rem;
+        }
+        &__txt{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.25;
+        }
+    }
+    &__more{
+        color: $col-white;
+        text-decoration: none;
+        position: relative;
+        font-size: 1.4rem;
+        padding-bottom: 0.5rem;
+        width: fit-content;
+        &:hover{
+            color: $col-white;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            opacity: 0;
+            border-bottom:1px solid rgb(19, 142, 111);
+            transition: all 0.5s;
+        }
+        &:hover::after{
+            opacity: 1;
+            width: 100%;
+        }
+    }
+}
+// .top{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     margin: 3rem 0;
+//     animation: fadeIn 1s;
+//     z-index: 10000000;
+// }

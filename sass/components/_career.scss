@@ -1,0 +1,36 @@
+.career{
+    // display: flex;
+    background-color: $col-primary-1;
+    padding: $services-vertical-pad $services-hori-pad;
+    &__left{
+        animation: moveToLeft 1s ease-in;
+    }
+    &__right{
+        animation: moveToRight 1s ease-in;
+        @include respond(tab-port){
+            margin-top: 5rem;
+        }
+    }
+    &__main-heading{
+        position: relative;
+        font-size: 4.8rem;
+        font-weight: 700;
+        &::before{
+            position: absolute;
+            content: "";
+            // display: block;
+            height: 1rem;
+            width: 40%;
+            background-image: url("../img/career_line@1x.svg");
+            background-size: auto 10px;
+            // background-size: cover;
+            left: 0;
+            bottom: -3rem;
+
+        }
+    }
+    &__sub{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}

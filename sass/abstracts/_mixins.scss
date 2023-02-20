@@ -1,0 +1,12 @@
+@mixin respond($brk){
+    @if $brk==tab-port{
+        @media (max-width:767px) {
+            @content;
+        }
+    }
+    @if $brk==phone{
+        @media (max-width:575px) {
+            @content;
+        }
+    }
+}

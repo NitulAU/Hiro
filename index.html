@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Hiro</title>
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__check" id="nav-toggle">
+        <nav class="top">
+            <a class="logo-box">
+                <img src="img/logo.svg" alt="Hiro" class="hiro-logo">
+            </a>
+            <label for="nav-toggle" class="navigation__button">
+                <div class="navigation__bar">&nbsp;</div>
+            </label>
+        </nav>
+        <div class="navigation__bg"></div>
+        <div class="navigation__container">
+            <div class="navigation__container__side navigation__container--left">
+                <div class="navigation__links">Home</div>
+                <div class="navigation__links">About Us</div>
+                <div class="navigation__links">Services</div>
+                <div class="navigation__links">Works</div>
+                <div class="navigation__links">Contact</div>
+            </div>
+            <div class="navigation__container__side">
+                <h2 class="navigation__blog-header">BLOG</h2>
+                <div class="navigation__blogs">
+                        <img class="navigation__blogs__pic" src="img/Blog_small2.jpg" alt="1">
+                        <div class="navigation__blogs__txt">Ambitious <br>designs</div>
+                </div>
+                <div class="navigation__blogs">
+                    <div class="navigation__blogs">
+                            <img class="navigation__blogs__pic" src="img/Blog_small1.jpg" alt="2">
+                            <div class="navigation__blogs__txt">The Collection <br>Cover Archive</div>
+                    </div>
+                </div>
+                <a class="navigation__more">View more</a>
+            </div>
+        </div>
+    </div>
+    <section class="sec container1">
+        <div class="header">
+            <div class="header__mainarea">
+                <div class="carousel slide" id="primaryCarousel" data-bs-ride="carousel">
+                    <ul class="carousel-indicators" id="dot-list">
+                        <li data-bs-target="#primaryCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#primaryCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#primaryCarousel" data-bs-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="header__content">
+                                <div class="header__content__side">
+                                    <div class="header__content__side--bg">01</div>
+                                    <div class="header__content__side--box">
+                                        <h1 class="header__content__side--box--heading m-bottom-l">Remarkable Digital Products</h1>
+                                        <p class="header__content__side--box--txt">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for.</p>
+                                        <button class="header__content__side--box--btn btn-nocolor m-bottom-l">Read more</button>
+                                        <ul class="header__content__side--box--links" type="square">
+                                            <li class="btn-nocolo">facebook</li>
+                                            <li class="btn-nocolo">Twitter</li>
+                                            <li class="btn-nocolo">Behance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__content__picture"><img src="img/avatar.jpg" alt="man"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="header__content">
+                                <div class="header__content__side">
+                                    <div class="header__content__side--bg">02</div>
+                                    <div class="header__content__side--box">
+                                        <h1 class="header__content__side--box--heading m-bottom-l">Remarkable Digital Products</h1>
+                                        <p class="header__content__side--box--txt">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for.</p>
+                                        <button class="header__content__side--box--btn btn-nocolor m-bottom-l">Read more</button>
+                                        <ul class="header__content__side--box--links" type="square">
+                                            <li class="btn-nocolo">facebook</li>
+                                            <li class="btn-nocolo">Twitter</li>
+                                            <li class="btn-nocolo">Behance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__content__picture"><img src="img/avatar.jpg" alt="man"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="header__content">
+                                <div class="header__content__side">
+                                    <div class="header__content__side--bg">03</div>
+                                    <div class="header__content__side--box">
+                                        <h1 class="header__content__side--box--heading m-bottom-l">Remarkable Digital Products</h1>
+                                        <p class="header__content__side--box--txt">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for.</p>
+                                        <button class="header__content__side--box--btn btn-nocolor m-bottom-l">Read more</button>
+                                        <ul class="header__content__side--box--links" type="square">
+                                            <li class="btn-nocolo">facebook</li>
+                                            <li class="btn-nocolo">Twitter</li>
+                                            <li class="btn-nocolo">Behance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__content__picture"><img src="img/avatar.jpg" alt="man"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="sec design">
+        <div class="row design-container">
+            <div class="col-md-6 design__right">
+                <h1 class="design__right__heading m-bottom-md">Digital Product Design</h1>
+                <p class="design__right__description">We take products through every stage necessary for their creation – Product Discovery, Business and User Research, UX/UI Design, Prototyping, Usability Testing, and future Product Improvements.</p>
+            </div>
+            <div class="col-md-6 design__left">
+                <img class="design__left__img m-bottom-md" src="img/img_3.png" alt="des">
+                <p class="design__left__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button href="#" class="design__left__link  view-more-btn m-top-l" role="button">view more</button>
+            </div>
+        </div>
+    </section>
+    <section class="sec services service-reveal">
+        <h2 class="services__header">Our Services</h2>
+        <div class="row services__container">
+            <div class="col-md-4 services__box">
+                <div class="services__box__header">Strategy</div>
+                <ul type="none" class="p-0">
+                    <li class="services__list">UI & UX design</li>
+                    <li class="services__list">Graphic Design & identity</li>
+                    <li class="services__list">Video Production</li>
+                    <li class="services__list">Market Analysis</li>
+                    <li class="services__list">Deep Campaign Strategy</li>
+                </ul>
+            </div>
+            <div class="col-md-4 services__box">
+                <div class="services__box__header">Design</div>
+                <ul type="none" class="p-0">
+                    <li class="services__list">UI & UX design</li>
+                    <li class="services__list">Graphic Design & identity</li>
+                    <li class="services__list">Video Production</li>
+                    <li class="services__list">Market Analysis</li>
+                    <li class="services__list">Deep Campaign Strategy</li>
+                </ul>
+            </div>
+            <div class="col-md-4 services__box">
+                <div class="services__box__header">Development</div>
+                <ul type="none" class="p-0">
+                    <li class="services__list">UI & UX design</li>
+                    <li class="services__list">Graphic Design & identity</li>
+                    <li class="services__list">Video Production</li>
+                    <li class="services__list">Market Analysis</li>
+                    <li class="services__list">Deep Campaign Strategy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec project">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project__card m-bottom-md">
+                    <img src="img/Works4.png" alt="" class="project__card__pic m-bottom-md">
+                    <h3 class="project__card__head">See what we do</h3>
+                    <h6 class="project__card__sub">Branding system / Motion design</h6>
+                </div>
+                <div class="project__card">
+                    <img src="img/Works2.png" alt="" class="project__card__pic m-bottom-md">
+                    <h3 class="project__card__head">See what we do</h3>
+                    <h6 class="project__card__sub">Branding system / Motion design</h6>
+                </div>
+            </div>
+            <div class="col-md-6 m-top-l">
+                <div class="project__card m-bottom-md">
+                    <img src="img/Works3.png" alt="" class="project__card__pic m-bottom-md">
+                    <h3 class="project__card__head">See what we do</h3>
+                    <h6 class="project__card__sub">Branding system / Motion design</h6>
+                </div>
+                <div class="project__card">
+                    <img src="img/Works1.png" alt="" class="project__card__pic m-bottom-md">
+                    <h3 class="project__card__head">See what we do</h3>
+                    <h6 class="project__card__sub">Branding system / Motion design</h6>
+                </div>
+            </div>
+        </div>
+        <button class="view-btn m-top-md">view all projects</button>
+    </section>
+    <section class="sec team">
+        <div class="row">
+            <div class="col-md-5 team__left">
+                <h1 class="team__left__heading m-bottom-md">Meet <br>The Team</h1>
+                <p class="team__left__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                <div class="carousel-control">
+                    <!-- <button class="carousel-control-prev carousel-arrow" type="button" data-bs-target="#secondaryCarousel" data-bs-slide="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22H21a.75.75 0 010 1.5H4.81l6.22 6.22a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next carousel-arrow" type="button" data-bs-target="#secondaryCarousel" data-bs-slide="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="visually-hidden">Next</span>
+                      </button> -->
+                    <button class="car__button car__button--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                    </button>
+                    <button class="car__button car__button--right">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                          </svg>              
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-7 team__pic">
+                <!-- <div class="carousel slide" id="secondaryCarousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item  active d-flex">
+                            <div class="row member-slide d-flex">
+                                <div class="col-sm-6 member">
+                                    <img src="img/img_5.png" alt="5" class="member__img">
+                                    <div class="row">
+                                        <div class="col-l-6 col-md-8 member__details member__details--1">
+                                            <h3 class="member__details__name">Paulina Gayoso</h3>
+                                            <h5 class="member__details__role">Project Manager</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 member">
+                                    <img src="img/img_4.png" alt="5" class="member__img">
+                                    <div class="row">
+                                        <div class="col-l-6 col-md-8 member__details member__details--2">
+                                            <h3 class="member__details__name">Paulina Gayoso</h3>
+                                            <h5 class="member__details__role">Project Manager</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item d-flex">>
+                            <div class="row member-slide d-flex">
+                                <div class="col-sm-6 member">
+                                    <img src="img/img_5.png" alt="5" class="member__img">
+                                    <div class="row">
+                                        <div class="col-l-6 col-md-8 member__details member__details--1">
+                                            <h3 class="member__details__name">Paulina Gayoso</h3>
+                                            <h5 class="member__details__role">Project Manager</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 member">
+                                    <img src="img/img_4.png" alt="5" class="member__img">
+                                    <div class="row">
+                                        <div class="col-l-6 col-md-8 member__details member__details--2">
+                                            <h3 class="member__details__name">Paulina Gayoso</h3>
+                                            <h5 class="member__details__role">Project Manager</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="car">
+                    <div class="car__slider">
+                        <ul class="car__list">
+                            <li class="car__item car__item--1 current-slide">
+                                <div class="row member-slide d-flex">
+                                    <div class="col-sm-6 member">
+                                        <img src="img/img_5.png" alt="5" class="member__img">
+                                        <div class="row">
+                                            <div class="col-l-6 col-md-8 member__details member__details--1">
+                                                <h3 class="member__details__name">Paulina Gayoso</h3>
+                                                <h5 class="member__details__role">Project Manager</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 member">
+                                        <img src="img/img_4.png" alt="5" class="member__img">
+                                        <div class="row">
+                                            <div class="col-l-6 col-md-8 member__details member__details--2">
+                                                <h3 class="member__details__name">Paulina Gayoso</h3>
+                                                <h5 class="member__details__role">Project Manager</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="car__item car__item--2">
+                                <div class="row member-slide d-flex">
+                                    <div class="col-sm-6 member">
+                                        <img src="img/img_5.png" alt="5" class="member__img">
+                                        <div class="row">
+                                            <div class="col-l-6 col-md-8 member__details member__details--1">
+                                                <h3 class="member__details__name">Paulina Gayoso</h3>
+                                                <h5 class="member__details__role">Project Manager</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 member">
+                                        <img src="img/img_4.png" alt="5" class="member__img">
+                                        <div class="row">
+                                            <div class="col-l-6 col-md-8 member__details member__details--2">
+                                                <h3 class="member__details__name">Paulina Gayoso</h3>
+                                                <h5 class="member__details__role">Project Manager</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                    
+                            <li class="car__item car__item--3">
+                                <div class="row member-slide d-flex">
+                                    <div class="col-sm-6 member">
+                                        <img src="img/img_5.png" alt="5" class="member__img">
+                                        <div class="row">
+                                            <div class="col-l-6 col-md-8 member__details member__details--1">
+                                                <h3 class="member__details__name">Paulina Gayoso</h3>
+                                                <h5 class="member__details__role">Project Manager</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 member">
+                                        <img src="img/img_4.png" alt="5" class="member__img">
+                                        <div class="row">
+                                            <div class="col-l-6 col-md-8 member__details member__details--2">
+                                                <h3 class="member__details__name">Paulina Gayoso</h3>
+                                                <h5 class="member__details__role">Project Manager</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script src="js/car.js"></script>
+            </div>
+        </div>
+    </section>
+    <section class="sec career">
+        <div class="row">
+            <div class="col-md-6 career__left"><h1 class="career__main-heading">Career <br>Work with us</h1></div>
+            <div class="col-md-6 career__right">
+                <p class="career__sub m-bottom-l">Our work transforms how customers experience your business – creating distinction, shifting perceptions and driving growth.</p>
+                <a href="#" class="design__left__link view-more-btn" role="button">view more</a>
+            </div>
+        </div>
+        
+    </section>
+    <section class="sec contact">
+        <h5 class="contact__sub">At Explose, it’s always storytelling time. Swing by & share yours.</h5>
+        <h1 class="contact__main">Let’s talk</h1>
+        <div class="row  m-top-md d-flex">
+            <div class="col-md-5">
+                <p class="contact__address">9010 Varna, Bulgaria,b<br>Breeze Borough, <br>Saint Nicholas, 26</p>
+            </div>
+            <div class="col-md-5">
+                <p class="contact__address">UK: +44 567 637 0000 <br>hey@costomarl.com</p>
+                <div class="contact--list">
+                    <ul class="contact--links" type="none">
+                        <li><a href="#"><img src="img/twitter@1x.svg" alt="social media"></a></li>
+                        <li><a href="#"><img src="img/linkedin@1x.svg" alt="social media"></a></li>
+                        <li><a href="#"><img src="img/facebook@1x.svg" alt="social media"></a></li>
+                        <li><a href="#"><img src="img/behance@1x.svg" alt="social media"></a></li>
+                        <li><a href="#"><img src="img/medium@1x.svg" alt="social media"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class=""> -->
+                <a href="#" class="col-md-1 col-sm-4 goto-top m-top-md">
+                    <svg id="top" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+                    </svg>                  
+                </a>
+            <!-- </div>  -->
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- <div class="row"> -->
+            <p>© <a>BootstrapDash</a> 2020. All rights reserved.</p>
+            <div class=""m-e-5>
+                <a href="#" class="footer__links">Terms and Conditions</a>
+                <a href="#" class="footer__links">Privacy Policy</a>
+                <a href="#" class="footer__links">Cookie Policy</a>
+            </div>
+        <!-- </div> -->
+    </footer>
+    <script src="js/animationscroll.js"></script>
+    <!-- <script src="js/scroll-out.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'section'
+        })
+    </script> -->
+</body>
+</html>

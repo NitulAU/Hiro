@@ -1,0 +1,21 @@
+.project{
+    padding: $services-vertical-pad $services-hori-pad;
+    background-color:$col-grey-1;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        animation: moveToBottom 1s;
+        &__pic{
+            width: 100%;
+        }
+        &__head{
+            font-weight: 700;
+            color: $col-primary-1;
+        }
+        &__sub{
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+}
