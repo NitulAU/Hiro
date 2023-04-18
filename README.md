@@ -8,5 +8,5 @@ CSS animations used are also advanced.
 javascript used is to add animation for each section on appearing on screen. 
 For now is written for single section(.services) and it is partially successful.
 
-PS:This project purely focused on implementing advanced css.
+PS:This project purely focused on implementing advanced css only.
 
